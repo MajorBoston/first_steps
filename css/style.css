@@ -392,13 +392,13 @@ input[type="text"].field:focus {
 }
 
 #table_for_us {
-  border: 2px solid #addbf5;
+  border: 2px solid #ff00ff;
   text-align: center;
   width: 100%;
 }
 
 .td-border {
-  border: 2px solid #addef5;
+  border: 2px solid #ffb6f9;
 }
 
 /* Сторінка зворотній зв'язок */
