@@ -1,0 +1,570 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Popins", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: rgb(65, 65, 65);
+  background: linear-gradient(45deg, rgb(141, 57, 197), black);
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 135%;
+  /* display: flex; */
+}
+
+a {
+  color: rgb(115, 183, 247);
+  text-decoration: none;
+  transition: all.6s ease;
+  -moz-transition: all.6s ease;
+  -webkit-transition: all.6s ease;
+  -ms-transition: all.6s ease;
+}
+
+a:hover {
+  color: rgb(247, 47, 247);
+  text-decoration: none;
+  transition: all.10s ease;
+  -moz-transition: all.10s ease;
+  -webkit-transition: all.10s ease;
+  -ms-transition: all.10s ease;
+}
+
+a:active {
+  color: rgb(0, 255, 170);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+.right {
+  float: right;
+  transition: 0.4s;
+}
+
+.right:hover {
+  transform: translateY(4px);
+}
+
+.left {
+  float: left;
+  color: #fafafa;
+}
+
+.clear {
+  clear: both;
+}
+
+hr {
+  display: block;
+  border: 0;
+  height: 2px;
+  border-top: 2px solid rgb(156, 188, 209);
+  padding: 0;
+}
+
+/* Selection blocks */
+
+::selection {
+  background: rgb(144, 115, 247);
+  color: white;
+}
+::-moz-selection {
+  background: rgb(144, 115, 247);
+  color: white;
+}
+::-webkit-selection {
+  background: rgb(144, 115, 247);
+  color: white;
+}
+::-ms-selection {
+  background: rgb(144, 115, 247);
+  color: white;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  background-color: rgb(64, 0, 77);
+  /* float: left; */
+}
+
+footer {
+  background-color: rgb(64, 0, 77);
+  /* position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; */
+  height: 40px;
+  margin-bottom: -100px;
+}
+
+header {
+  border-bottom: 2px solid silver;
+  padding: 1%;
+}
+
+#logo {
+  font-size: 3em;
+  width: 100px;
+  font-family: "Courier New", Courier, monospace, color rgb(238, 237, 237);
+  transition: 0.4s;
+}
+
+#logo:hover {
+  transform: translateY(5px);
+}
+
+.contact {
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace margin-left 30px;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+
+.contact {
+  transform: translateY(5px);
+}
+
+input[type="text"].field {
+  border-radius: 10px;
+  border: 4px solid rgb(216, 215, 215);
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 1000px;
+}
+
+input[type="text"].field:focus {
+  border: 5px solid rgb(148, 0, 206);
+  transition: 0.2s;
+}
+
+#menu {
+  color: rgb(0, 225, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+}
+
+#menu hr {
+  width: 500px;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#menuHrefs a {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #9bd7ff;
+  transition: 0.4s;
+}
+
+#menuHrefs a:hover {
+  color: #000000;
+  background-color: rgb(255, 123, 0);
+}
+
+/* Стилі для Карток */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(255, 255, 255, 0.05),
+    -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: linear-gradient(45deg, rgb(247, 0, 255), rgb(46, 0, 250));
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.container .card:hover .box {
+  transform: translateY(-60px);
+  box-shadow: 0 10px 40px rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 138, 4), rgb(249, 255, 158));
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.005);
+  transition: 1s;
+  pointer-events: none;
+}
+
+.container .card:hover .box .content h2 {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.container .card .box .content h3 {
+  font-size: 1.8em;
+  color: rgb(39, 39, 39);
+  z-index: 1;
+  transition: 0.9s;
+}
+
+.container .card .box .content p {
+  font-size: 1em;
+  font-weight: 300;
+  color: rgb(212, 222, 255);
+  z-index: 1;
+  transition: 0.9s;
+}
+
+.container .card:hover .box .content h3 {
+  color: #ffe4e4;
+}
+.container .card:hover .box .content p {
+  color: #000000a2;
+}
+
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #00aeff;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.container .card:hover .box .content a {
+  background: #fc3175;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.473);
+}
+
+/* Основні стилі для сайта */
+
+#wrapper {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  height: 100%;
+}
+
+#wrapper #articles {
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#wrapper #articles article {
+  float: left;
+  width: 31.33333%;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #55004e;
+  margin-right: 2%;
+  min-height: 300px;
+}
+
+#wrapper #articles article img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 3px black;
+  margin-bottom: 10px;
+}
+
+#wrapper #articles article h2 {
+  width: 90%;
+  margin-left: 5px;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#wrapper #articles article p {
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+  text-indent: 1.1em;
+  font-weight: 100;
+  color: wheat;
+}
+
+#wrapper #articles article a {
+  padding: 10px 5px 10px 5px;
+  background-color: #f5adad;
+  margin-left: 10%;
+  margin-top: 10px;
+  border-radius: 15px;
+  color: #000000;
+  float: left;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+#wrapper #articles article a:hover {
+  background-color: rgb(255, 136, 0);
+}
+
+/* Стилі сторінки Про нас */
+
+#about_us {
+  width: 60%;
+  float: left;
+  background-color: #000000;
+  border-radius: 15px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+#table_for_us {
+  font-family: monospace;
+  text-align: center;
+  color: wheat;
+  border-radius: 15px;
+}
+
+#columnRight {
+  width: 30%;
+  float: left;
+  margin-left: 10px;
+  background-color: #000000;
+  border-radius: 15px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  padding: 1%;
+  margin-top: -155px;
+}
+
+#columnLeft {
+  float: left;
+  width: 60%;
+  padding: 1%;
+  color: wheat;
+  box-sizing: border-box;
+}
+
+#table_for_us {
+  border: 2px solid #addbf5;
+  text-align: center;
+  width: 100%;
+}
+
+.td-border {
+  border: 2px solid #addef5;
+}
+
+/* Сторінка зворотній зв'язок */
+
+/* Стилі для форм */
+
+form {
+  width: 60%;
+  margin-left: 20%;
+  float: left;
+}
+
+form input {
+  border-radius: 10px;
+  border: 2px solid rgb(216, 215, 215);
+  padding: 5px;
+  float: center;
+  clear: both;
+  margin-bottom: 10px;
+  width: 40%;
+  background-color: rgb(215, 173, 255);
+  transition: 0.4s;
+  font-size: 1em;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 5px solid rgb(183, 0, 255);
+  transition: 0.2s;
+}
+
+form label {
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
+  color: wheat;
+}
+
+form textarea {
+  width: 90%;
+  float: left;
+  clear: both;
+  background-color: rgb(230, 203, 255);
+  transition: 0.4s;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.5em;
+  max-height: 130px;
+}
+
+form textarea:hover {
+  background-color: white;
+}
+
+form input:hover {
+  background-color: white;
+}
+
+form #send {
+  float: left;
+  padding: 10px;
+  margin-top: 55px;
+  cursor: pointer;
+  width: 90%;
+}
+
+form #send:hover {
+  background-color: rgb(255, 138, 4);
+  color: white;
+}
+
+form #registred{
+  font-size: 2em;
+  margin-bottom: 150px;
+}
+
+form #registred:hover {
+  background-color: rgb(255, 138, 4);
+  color: white;
+}
+
+form #auth{
+  font-size: 2em;
+  margin-bottom: 150px;
+}
+
+form #auth:hover {
+  background-color: rgb(255, 138, 4);
+  color: white;
+}
+
+/* Центральний блок сайта */
+
+#main_soc_block {
+  width: 100%;
+  padding: 1% 0;
+  border-bottom: 2px solid silver;
+  border-top: 2px solid silver;
+  margin: 20px 0;
+  float: left;
+  /* background: url("../img/it2.jpg") repeat-x center; */
+  height: 200px;
+  border-radius: 20px;
+}
+
+#main_soc_block_in {
+  text-align: center;
+  padding: 1%;
+  border-radius: 10px;
+  height: 110px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.795);
+  max-width: 100%;
+  
+}
+
+#main_soc_block_in a {
+  padding: 3px;
+  border-radius: 20px;
+  background-color: orange;
+  margin-top: 35px;
+  width: 100%;
+  float: left;
+  color: #eeeefc;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 0.6s;
+}
+
+#main_soc_block_in a:hover {
+  transform: translateY(-10px);
+  background-color: rgb(140, 209, 140);
+}
+
+/* Стилі для footer */
+
+footer {
+  /* width: 100%; */
+  border-top: 4px solid silver;
+  margin-top: 40px;
+  padding: 1%;
+  padding-bottom: 3%;
+  height: 10px;
+  flex: 0 0 auto;
+}
+
+footer img {
+  width: 5%;
+  /* margin-left: 10px; */
+  margin-top: 10px;
+  /* margin-right: 80px; */
+}
+
+#page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* footer,
+#page-wrap:after {
+  height: 10px;
+} */
+
+#page-wrap {
+  min-height: 91%;
+  /* margin-bottom: -10px; */
+}
+
